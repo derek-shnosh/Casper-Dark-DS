@@ -1,66 +1,53 @@
-# Casper
+# Casper Dark (DS)
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 
-&nbsp;
+> Forked from Casper v2.9.6 on 2019/03/19
 
-![screenshot-desktop](https://user-images.githubusercontent.com/120485/27221326-1e31d326-5280-11e7-866d-82d550a7683b.jpg)
+# Changes
 
-&nbsp;
+* Dark theme.
+* Bundled scripts: [clipboard.js][clipboardjs], [PrismJS][prismjs]
+  * Custom (modified) PrismJS theme: [prism-theme-one-dark-ds][prismjs-onedark]
+* Scroll-to-top button on post pages (`post.hbs`).
+* Preferential style changes.
 
-# First time using a Ghost theme?
+# Installation
 
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
+1. Download the files using the [GitHub .zip download][zip-dl] option.
+2. Navigate to **Settings > Design** on your Ghost admin interface.
+3. Click **Upload a theme** (near bottom).
+4. Either drag the .zip file onto the dialogue, or click the center to browse to the .zip.
+5. Click **Activate Now**.
 
-We've documented our default theme pretty heavily so that it should be fairly easy to work out what's going on just by reading the code and the comments. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://themes.ghost.org) which explains every possible Handlebars helper and template.
+# Screenshots
 
-**The main files are:**
+## Home
 
-- `default.hbs` - The main template file
-- `index.hbs` - Used for the home page
-- `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
+![screenshot-desktop-home][ss-d-home]
 
-One really neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
+## Post (Top)
 
-- `page-about.hbs` - Custom template for the `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
+![screenshot-desktop-post-2-top][ss-d-p2-top]
 
+## Post (Bottom)
 
-# Development
+![screenshot-desktop-post-2-bottom][ss-d-p2-btm]
 
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+## Post Code
 
-```bash
-$ yarn install
-$ yarn dev
-```
-
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
-
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
-
-```bash
-$ yarn zip
-```
-
-# PostCSS Features Used
-
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
+![screenshot-desktop-post-1-code][ss-d-p1-code]
 
 
-# SVG Icons
-
-Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
-
-You can add your own SVG icons in the same manner.
 
 
-# Copyright & License
-
-Copyright (c) 2013-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
+[ghost]: http://github.com/tryghost/ghost/
+[casper]: https://github.com/TryGhost/Casper
+[ss-d-home]: assets/screenshot-desktop-home.png
+[ss-d-p2-top]: assets/screenshot-desktop-post-2-top.png
+[ss-d-p2-btm]: assets/screenshot-desktop-post-2-btm.png
+[ss-d-p1-code]: assets/screenshot-desktop-post-1-code.png
+[zip-dl]: https://github.com/derek-shnosh/casper-dark-ds/archive/master.zip
+[prismjs-onedark]: https://github.com/derek-shnosh/prism-theme-one-dark-ds
+[clipboardjs]: https://github.com/zenorocha/clipboard.js/
+[prismjs]: https://github.com/PrismJS/prism
