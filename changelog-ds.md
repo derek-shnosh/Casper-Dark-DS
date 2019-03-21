@@ -41,8 +41,11 @@
           
       </div>
       ```
+    - Result;
+      ![ss-d-p1-code][ss-steps-table]
 
 [steps-table-eg]: https://shnosh.io/securecrt-echo-paste/#securecrtconfiguration
+[ss-steps-table]: assets/screenshot-steps-table.png
 
 ## v.2.9.6-001
 
