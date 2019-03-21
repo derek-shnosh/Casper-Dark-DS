@@ -46,9 +46,11 @@ into the {body} of the default.hbs template --}}
             {{/if}}
 
             <section class="post-full-content">
-                <div class="post-content">
-                    {{content}}
-                </div>
+                {{!-- <div class="line-numbers" markdown="1"> --}}
+                    <div class="post-content">
+                        {{content}}
+                    </div>
+                {{!-- </div> --}}
             </section>
 
             {{!-- Email subscribe form at the bottom of the page --}}
