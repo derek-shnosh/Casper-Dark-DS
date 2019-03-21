@@ -860,6 +860,10 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0;
 }
 
+.post-full-content p {
+    margin: .5em;
+}
+
 .post-full-content a {
     color: rgba(212, 218, 222, .5);
     word-break: break-word;
@@ -953,7 +957,12 @@ Usage (In Ghost editor):
     font-weight: 400;
 }
 
-.post-full-content blockquote p:last-child {
+.post-full-content blockquote p:last-child,
+.post-full-content blockquote ul:last-child {
+    margin-bottom: 0.5em;
+}
+
+.post-full-content blockquote p:only-child {
     margin-bottom: 0;
 }
 
@@ -1046,7 +1055,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content h2 {
-    margin: 0.5em 0 0.2em 0;
+    margin: 1em 0 0.2em 0;
     font-size: 3.6rem;
     font-weight: 700;
 }
@@ -1166,7 +1175,7 @@ Usage (In Ghost editor):
     border-collapse: collapse;
     font-family: "Muli", sans-serif;
     font-size: 1.6rem;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .post-full-content table th {
@@ -1182,12 +1191,23 @@ Usage (In Ghost editor):
 .post-full-content table td {
     padding: 6px 12px;
     border: 1px solid rgba(212, 218, 222, .25);
+    vertical-align: middle;
 }
 
 .post-full-content table code {
     font-size: 1.4rem;
 }
 
+.steps-table > table thead {
+    visibility: collapse;
+}
+
+.steps-table > table tbody tr:nth-child(odd) {
+    background: rgba(25, 25, 30, 1) !important;
+    font-weight: 900;
+}
+
+/* Details (accordion) */
 .post-full-content details,
 .post-full-content summary {
     background: rgba(68,114,196,.1);
@@ -1202,13 +1222,17 @@ Usage (In Ghost editor):
     font-style: italic;
 }
 
+details[open] summary {
+    background: rgba(68,114,196,.5);
+}
+
 details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
+    animation: sweep .2s ease-in-out;
 }
 
 @keyframes sweep {
-    0%    {opacity: 0; margin-left: -10px}
-    100%  {opacity: 1; margin-left: 0px}
+    0%    {opacity: 0}
+    100%  {opacity: 1}
 }
 
 /* 7.1. Subscribe Form
@@ -1905,7 +1929,7 @@ details[open] summary ~ * {
     border: none;
     outline: none;
     color: white;
-    background-color: rgba(85, 85, 85, 1);
+    background: rgba(85, 85, 85, 1);
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
@@ -1913,7 +1937,7 @@ details[open] summary ~ * {
 }
 
 #ToTop:hover {
-    background-color: rgba(62, 176, 239, .7);
+    background: rgba(62, 176, 239, .7);
 }
 
 /* 7.6. Koenig Styles
