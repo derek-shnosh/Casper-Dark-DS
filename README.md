@@ -3,14 +3,8 @@
 Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 
 > Forked from Casper v2.9.6 on 2019/03/19
-
-# Changes
-
-* Dark theme.
-* Bundled scripts: [clipboard.js][clipboardjs], [PrismJS][prismjs]
-  * Custom (modified) PrismJS theme: [prism-theme-one-dark-ds][prismjs-onedark]
-* Scroll-to-top button on post pages (`post.hbs`).
-* Preferential style changes.
+> 
+> [Changelog](changelog-ds.md)
 
 # Installation
 
