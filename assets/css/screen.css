@@ -989,12 +989,12 @@ Usage (In Ghost editor):
     overflow-x: auto;
     margin: 1.5em 0 3em;
     padding: 20px;
+    min-width: unset;
     max-width: 100%;
     border: 2px solid rgba(212,218,222,.1);
     color: var(--whitegrey);
     font-size: 1.3rem;
     line-height: 1.5em;
-    /* background: rgba(40, 44, 52, 1); */
     border-radius: 5px;
 }
 
@@ -1210,29 +1210,40 @@ Usage (In Ghost editor):
 /* Details (accordion) */
 .post-full-content details,
 .post-full-content summary {
-    background: rgba(68,114,196,.1);
+    background: rgba(68, 114, 196, 0.1);
     cursor: pointer;
-    padding: 3px;
-    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
     text-align: left;
+    border-radius: 5px;
+    padding: 5px;
 }
+
+/* .post-full-content details {
+    width: -moz-available;
+    width: -webkit-fill-available;
+} */
 
 .post-full-content summary desc {
     font-weight: bold;
     font-style: italic;
 }
 
-details[open] summary {
-    background: rgba(68,114,196,.5);
+details[open]>summary {
+    background: rgba(68, 114, 196, 0.5);
 }
 
-details[open] summary ~ * {
-    animation: sweep .2s ease-in-out;
+details[open]>summary~* {
+    animation: sweep 0.2s ease-in-out;
 }
 
 @keyframes sweep {
-    0%    {opacity: 0}
-    100%  {opacity: 1}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* 7.1. Subscribe Form
@@ -1937,7 +1948,7 @@ details[open] summary ~ * {
 }
 
 #ToTop:hover {
-    background: rgba(62, 176, 239, .7);
+    background: rgba(62, 176, 239, 0.7);
 }
 
 /* 7.6. Koenig Styles
