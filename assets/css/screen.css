@@ -1219,11 +1219,6 @@ Usage (In Ghost editor):
     padding: 5px;
 }
 
-/* .post-full-content details {
-    width: -moz-available;
-    width: -webkit-fill-available;
-} */
-
 .post-full-content summary desc {
     font-weight: bold;
     font-style: italic;
@@ -1245,6 +1240,11 @@ details[open]>summary~* {
         opacity: 1;
     }
 }
+
+/* 7.0. PrismJS MD Injection
+/* ---------------------------------------------------------- */
+
+
 
 /* 7.1. Subscribe Form
 /* ---------------------------------------------------------- */
