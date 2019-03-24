@@ -1218,6 +1218,10 @@ Usage (In Ghost editor):
     padding: 5px;
 }
 
+.post-full-content details {
+    margin: 0.5em 0 1em;
+}
+
 .post-full-content summary desc {
     font-weight: bold;
     font-style: italic;
