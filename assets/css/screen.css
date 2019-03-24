@@ -988,7 +988,6 @@ Usage (In Ghost editor):
 .post-full-content pre {
     overflow-x: auto;
     margin: 1.5em 0 3em;
-    padding: 20px;
     min-width: unset;
     max-width: 100%;
     border: 2px solid rgba(212,218,222,.1);
