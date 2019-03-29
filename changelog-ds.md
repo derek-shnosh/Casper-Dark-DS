@@ -1,3 +1,10 @@
+## v2.9.6-003
+
+- Added PrismJS `command-line` hack to allow multiple-prompts ([reference][cmdline-hack]).
+- Updated PrismJS files (css/js) from source v1.16.0.
+
+[cmdline-hack]: https://github.com/PrismJS/prism/issues/1021#issuecomment-477791027
+
 ## v2.9.6-002
 
 - Margin and alignment formatting.

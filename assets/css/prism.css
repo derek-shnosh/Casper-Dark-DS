@@ -1,97 +1,99 @@
-﻿/**
+/**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
+
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #ABB2BF;
-  background: none;
-  font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+	color: rgba(171, 178, 191, 1);
+	background: none;
+	font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #282c34;
+	text-shadow: none;
+	background: rgba(40, 44, 52, 1);
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #9aa2b1;
+	text-shadow: none;
+	background: rgba(154, 162, 177, 1);
 }
 
 @media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    text-shadow: none;
-  }
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
 }
+
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #282c34;
+	background: rgba(40, 44, 52, 1);
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #5C6370;
+	color: rgba(92, 99, 112, 1);
 }
 
 .token.punctuation {
-  color: #abb2bf;
+	color: rgba(171, 178, 191, 1);
 }
 
-.token.selector,
-.token.tag {
-  color: #e06c75;
+.namespace {
+	opacity: .7;
 }
 
 .token.property,
+.token.tag,
 .token.boolean,
 .token.number,
 .token.constant,
 .token.symbol,
-.token.attr-name,
 .token.deleted {
-  color: #d19a66;
+	color: rgba(209, 154, 102, 1);
 }
 
+.token.selector,
+.token.attr-name,
 .token.string,
 .token.char,
-.token.attr-value,
 .token.builtin,
 .token.inserted {
-  color: #98c379;
+	color: rgba(152, 195, 121, 1);
 }
 
 .token.operator,
@@ -99,38 +101,40 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #56b6c2;
+	color: rgba(86, 182, 194, 1);
 }
 
 .token.atrule,
+.token.attr-value,
 .token.keyword {
-  color: #c678dd;
+	color: rgba(198, 120, 221, 1);
 }
 
-.token.function {
-  color: #61afef;
+.token.function,
+.token.class-name {
+	color: rgba(97, 175, 239, 1);
 }
 
 .token.regex,
 .token.important {
-  color: #c678dd;
+	color: rgba(198, 120, 221, 1);
 }
 
 .token.variable {
-  color: #e06c75;
+	color: rgba(224, 108, 117, 1);
 }
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .token.italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .token.entity {
-  cursor: help;
+	cursor: help;
 }
 
 pre[data-line] {
@@ -197,7 +201,7 @@ pre[class*="language-"].line-numbers > code {
 .line-numbers .line-numbers-rows {
 	position: absolute;
 	pointer-events: none;
-	top: 0;
+	top: -2px;
 	font-size: 100%;
 	left: -3.8em;
 	width: 3em; /* works for line-numbers below 1000 lines */
@@ -225,12 +229,9 @@ pre[class*="language-"].line-numbers > code {
 			text-align: right;
 		}
 
-.token a {
-	color: inherit;
-}
 div.code-toolbar {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 div.code-toolbar > .toolbar {
@@ -286,6 +287,17 @@ div.code-toolbar > .toolbar span:hover,
 div.code-toolbar > .toolbar span:focus {
 	color: inherit;
 	text-decoration: none;
+}
+
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+[class*='lang-'] script[type='text/plain'],
+[class*='language-'] script[type='text/plain'],
+script[type='text/plain'][class*='lang-'],
+script[type='text/plain'][class*='language-'] {
+	display: block;
+	font: 100% 'Fira Code', Consolas, Monaco, monospace;
+	white-space: pre;
+	overflow: auto;
 }
 
 .command-line-prompt {
