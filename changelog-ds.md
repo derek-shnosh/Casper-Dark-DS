@@ -1,3 +1,10 @@
+## v2.9.6-004
+
+- Disabled larger text on `.post-template .post-content > p:first-child`.
+- Added `tag-title` class to add thin stroke around tag titles on tag.hbs.
+- Added white border around `.author-card .avatar-wrapper` (bottom of post.hbs).
+- Added custom callout styles (see [readme](readme.md#features)).
+
 ## v2.9.6-003
 
 - Added PrismJS `command-line` hack to allow multiple-prompts ([reference][cmdline-hack]).
@@ -7,52 +14,10 @@
 
 ## v2.9.6-002
 
-- Margin and alignment formatting.
-  - `.post-full-content p` margin.
-  - `.post-full-content blockquote (p|ul):last-child` margin.
-  - `.post-full-content p:only-child` bottom margin.
-  - `.post-full-content h2` top margin.
-  - `.post-full-content table (th|td)` middle aligned.
-  - `summary` background lightens when opened
-  - `summary` animation changed.
-  - `#ToTop` button `background` declaration changed.
-- Added Style: `steps-table`
-  - Custom format for tables outlining process steps; [example][steps-table-eg].
-    - `table thead` is collapsed.
-    - `table tbody tr:nth-child` color change; i.e. alternating colors; e.g.
-    - Usage;
-      ```html
-      <div class="steps-table" markdown="1">
-
-          ```markdown
-          |   #   |       Steps        |
-          | :---: | :----------------: |
-          |   1   |   Do something.    |
-          |       |   ![image-1][1]    |
-          |   2   | Do something else. |
-          |       |   ![image-2][2]    |
-          |   3   | Do something else  |
-          |       |   ![image-3][3]    |
-          |   4   | Do something else  |
-          |       |   ![image-4][4]    |
-          |   5   | Do something else  |
-          |       |   ![image-5][5]    |
-
-
-          [1]: https://imgur.com/aaaaa
-          [2]: https://imgur.com/bbbbb
-          [3]: https://imgur.com/ccccc
-          [4]: https://imgur.com/ddddd
-          [5]: https://imgur.com/eeeee
-          ```
-          
-      </div>
-      ```
-    - Result;
-      ![ss-d-p1-code][ss-steps-table]
-
-[steps-table-eg]: https://shnosh.io/securecrt-echo-paste/#securecrtconfiguration
-[ss-steps-table]: assets/screenshot-steps-table.png
+- Misc margin and alignment formatting.
+- `summary` background lightens when opened, animation changed.
+- `#ToTop` button `background` changed.
+- Added custom table style `steps-table` (see [readme](readme.md#features)).
 
 ## v.2.9.6-001
 

@@ -190,6 +190,7 @@ h6 {
     font-weight: 900;
 }
 
+/* Adds stroke around tag titles on tag pages */
 .tag-title {
     z-index: 10;
     margin: 0;
@@ -848,6 +849,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content dl,
 .post-full-content pre,
 .post-full-content blockquote,
+.post-full-content .callout,
 .post-full-comments,
 .footnotes {
     min-width: 100%;
@@ -943,16 +945,8 @@ Usage (In Ghost editor):
     margin: 0 auto !important;
 }
 
-.post-full-content blockquote {
-    /* border-left: #3eb0ef 3px solid; */
-    /* background: rgba(68, 114, 196, .1); */
-    border-left: 3px solid rgba(195, 195, 95, 1);
-    background: rgba(195, 195, 95, .1);
-    margin: .5em 0;
-    padding: .1em 1em .2em;
-}
-
-.post-full-content blockquote p {
+.post-full-content blockquote p,
+.post-full-content .callout {
     margin: 0 0 .4em 0;
     color: inherit;
     line-height: 1.4em;
@@ -960,18 +954,105 @@ Usage (In Ghost editor):
     font-weight: 400;
 }
 
-.post-full-content blockquote li {
+.post-full-content blockquote li,
+.post-full-content .callout li {
     font-size: .9em;
     font-weight: 400;
 }
 
 .post-full-content blockquote p:last-child,
-.post-full-content blockquote ul:last-child {
+.post-full-content blockquote ul:last-child,
+.post-full-content .callout p:last-child,
+.post-full-content .callout ul:last-child {
     margin-bottom: 0.5em;
 }
 
-.post-full-content blockquote p:only-child {
+.post-full-content blockquote p:only-child,
+.post-full-content .callout p:only-child {
     margin-bottom: 0;
+}
+
+.post-full-content blockquote,
+.post-full-content .callout {
+    margin: .5em 0;
+    padding: .1em .5em .2em 1.5em;
+    display: block;
+    position: relative;
+}
+
+.post-full-content blockquote {
+    border-left: 10px ridge rgba(195, 195, 95, 1);
+    background: rgba(195, 195, 95, .1);
+}
+
+.post-full-content blockquote:before {
+	content: "\201C";
+    color: rgba(195, 195, 95, .8);
+	font-size: 2em;
+	font-weight: 700;
+	position: absolute;
+	top: 10px;
+    left: 5px;
+}
+
+/* Custom Callouts */
+.post-full-content .callout {
+    padding: .1em .5em .2em 1.7em;
+}
+
+.post-full-content .callout.whitespace {
+    white-space: pre;
+}
+
+.post-full-content .callout {
+    border-left: 5px solid rgba(150, 150, 150, 1);
+    background-color: rgba(150, 150, 150, .1);
+}
+
+.post-full-content .callout:before {
+    font-size: 1.5em;
+    position: absolute;
+    left: 2.5px;
+}
+
+.post-full-content .callout.info {
+    border-left-color: rgba(95, 125, 195, 1);
+    background-color: rgba(95, 125, 195, .1);
+}
+
+.post-full-content .callout.info:before {
+    content: '\1F6C8';
+    color: rgba(95, 125, 195, .8);
+}
+
+.post-full-content .callout.success {
+    border-left-color: rgba(0, 125, 0, 1);
+    background-color: rgba(0, 125, 0, .1);
+}
+
+.post-full-content .callout.success:before {
+    content: '\2713';
+    color: rgba(0, 125, 0, .8);
+}
+
+.post-full-content .callout.warning {
+    border-left-color: rgba(205, 105, 0, 1);
+    background-color: rgba(205, 105, 0, .1);
+}
+
+.post-full-content .callout.warning:before {
+    content: '\26A0';
+    color: rgba(205, 105, 0, .8);
+}
+
+.post-full-content .callout.danger {
+    border-left-color: rgba(150, 0, 0, 1);
+    background-color: rgba(150, 0, 0, .1);
+}
+
+.post-full-content .callout.danger:before {
+    content: '\2BC3';
+    color: rgba(150, 0, 0, .8);
 }
 
 .post-full-content code {
@@ -1488,6 +1569,7 @@ details[open]>summary~* {
 .author-card .avatar-wrapper {
     position: relative;
     margin-right: 15px;
+    /* Adds border around author image on bottom of post.hbs */
     border: 2px solid rgba(62, 176, 239, 0.7);
 }
 
@@ -1979,10 +2061,11 @@ details[open]>summary~* {
     align-items: center;
 }
 
+/* Commenting out, not a fan.
 .post-template .post-content > p:first-child {
     font-size: 1.25em;
     line-height: 1.5em;
-}
+} */
 
 .post-full-content .kg-image {
     max-width: 100%;
