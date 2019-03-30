@@ -508,7 +508,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 100%;
     background: color(var(--lightgrey) l(+10%));
     border-radius: 100%;
-
     object-fit: cover;
 }
 
@@ -1489,6 +1488,7 @@ details[open]>summary~* {
 .author-card .avatar-wrapper {
     position: relative;
     margin-right: 15px;
+    border: 2px solid rgba(62, 176, 239, 0.7);
 }
 
 .author-list-item .author-card {
