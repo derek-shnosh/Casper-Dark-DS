@@ -946,7 +946,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content blockquote p,
-.post-full-content .callout {
+.post-full-content .callout p {
     margin: 0 0 .4em 0;
     color: inherit;
     line-height: 1.4em;
