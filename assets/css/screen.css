@@ -998,19 +998,17 @@ Usage (In Ghost editor):
 /* Custom Callouts */
 .post-full-content .callout {
     padding: .1em .5em .2em 1.7em;
+    border-left: 5px solid rgba(150, 150, 150, 1);
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(150, 150, 150, .1);
 }
 
 .post-full-content .callout.whitespace {
     white-space: pre;
 }
 
-.post-full-content .callout {
-    border-left: 5px solid rgba(150, 150, 150, 1);
-    background-color: rgba(150, 150, 150, .1);
-}
-
 .post-full-content .callout:before {
-    font-size: 1.5em;
+    font-size: 2.5rem;
     position: absolute;
     left: 2.5px;
 }

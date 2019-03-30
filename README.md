@@ -26,9 +26,7 @@ Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 - Warning (⚠ orange)
 - Danger (⯃ red)
 
-### Usage
-
-Wrap the text in a `<p>` tag, specifying the style; e.g. `<p class="callout info"></p>`
+### Callouts with `<p>`
 
 ```html
 <p class="callout">This is a plain callout.</p>
@@ -40,29 +38,34 @@ Wrap the text in a `<p>` tag, specifying the style; e.g. `<p class="callout info
 <p class="callout warning">This is a warning callout</p>
 
 <p class="callout danger">This is a danger callout</p>
+```
 
-<p class="callout info whitespace">Add "whitespace" to the class to honor
-New Lines without <br>. Blank lines will break <p>, use &nbsp;
-&nbsp;
-Note: Does not play well with markdown.</p>
+### Callout with `<div>`
 
-<div class="callout">This is a plain callout wrapped in <div> to support Markdown; there must be a blank line before any markdown.
+*Can be used to include line-breaks and markdown in the callout; markdown requires a blank space after the `<div>` (ignore `\` in the code block).*
+
+```html
+<div class="callout info">
+
+This is an informational calloutwith some `inline-code`
 
 > Blockquote *within* a callout?!
 
-Markdown formatted list;
-- Item 1
-- Item 2 has `inline code`
+\```bash
+# And a code block.
+sudo nanon /etc/hostname
+\```
 
-| Markdown | Table |
-| :-:      | :-    |
-| Center   | Left  |
+And a list
+- Item 1
+- Item 2
+  - Sub-item
 </div>
 ```
 
-### Result
+### Results
 
-![callout-styles][ss-callout-styles]
+![screenshot-callouts][ss-callouts]
 
 ## Steps Tables
 
@@ -139,4 +142,4 @@ Wrap the table in a `<div>` tag, include `markdown=1` if the table is MD formatt
 [bookstack-callouts]: https://www.bookstackapp.com/blog/beta-release-v0-11-0/
 [steps-table-eg]: https://shnosh.io/securecrt-echo-paste/#securecrtconfiguration
 [ss-steps-table]: assets/screenshot-steps-table.png
-[ss-callout-styles]: assets/screenshot-callout-styles.png
+[ss-callouts]: assets/screenshot-callouts.png
