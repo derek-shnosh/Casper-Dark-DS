@@ -945,35 +945,29 @@ Usage (In Ghost editor):
     margin: 0 auto !important;
 }
 
-.post-full-content blockquote p,
-.post-full-content .callout p {
+.post-full-content blockquote p {
     margin: 0 0 .4em 0;
-    color: inherit;
+    color: rgba(212, 218, 222, 1) !important;
     line-height: 1.4em;
-    font-size: .9em;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
-.post-full-content blockquote li,
-.post-full-content .callout li {
-    font-size: .9em;
+.post-full-content blockquote li {
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
 .post-full-content blockquote p:last-child,
-.post-full-content blockquote ul:last-child,
-.post-full-content .callout p:last-child,
-.post-full-content .callout ul:last-child {
+.post-full-content blockquote ul:last-child {
     margin-bottom: 0.5em;
 }
 
-.post-full-content blockquote p:only-child,
-.post-full-content .callout p:only-child {
+.post-full-content blockquote p:only-child {
     margin-bottom: 0;
 }
 
-.post-full-content blockquote,
-.post-full-content .callout {
+.post-full-content blockquote {
     margin: .5em 0;
     padding: .1em .5em .2em 1.5em;
     display: block;
@@ -997,43 +991,67 @@ Usage (In Ghost editor):
 
 /* Custom Callouts */
 .post-full-content .callout {
+    font-size: 1.6rem;
+    margin: .5em 0;
     padding: .1em .5em .2em 1.7em;
     border-left: 5px solid rgba(150, 150, 150, 1);
     border-radius: 3px 0 0 3px;
     background-color: rgba(150, 150, 150, .1);
+    display: block;
+    position: relative;
 }
 
-.post-full-content .callout.whitespace {
-    white-space: pre;
+.post-full-content .callout p {
+    margin: 0 0 .4em 0;
+    color: inherit;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.post-full-content .callout li {
+    font-weight: 400;
+}
+
+.post-full-content .callout p:only-child {
+    margin-bottom: 0 !important;
+}
+
+.post-full-content .callout p:last-child,
+.post-full-content .callout ul:last-child {
+    margin-bottom: 0.5em;
 }
 
 .post-full-content .callout:before {
     font-size: 2.5rem;
     position: absolute;
     left: 2.5px;
+    top: 1px;
 }
 
 .post-full-content .callout.info {
+    color: rgba(95, 125, 195, 1);
     border-left-color: rgba(95, 125, 195, 1);
     background-color: rgba(95, 125, 195, .1);
 }
 
 .post-full-content .callout.info:before {
-    content: '\1F6C8';
+    content: '\24D8';
     color: rgba(95, 125, 195, .8);
 }
 
 .post-full-content .callout.success {
+    color: rgba(0, 125, 0, 1);
     border-left-color: rgba(0, 125, 0, 1);
     background-color: rgba(0, 125, 0, .1);
 }
 
 .post-full-content .callout.success:before {
-    content: '\2713';
+    content: '\2714';
     color: rgba(0, 125, 0, .8);
 }
 
 .post-full-content .callout.warning {
+    color: rgba(205, 105, 0, 1);
     border-left-color: rgba(205, 105, 0, 1);
     background-color: rgba(205, 105, 0, .1);
 }
@@ -1044,8 +1062,9 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout.danger {
-    border-left-color: rgba(150, 0, 0, 1);
-    background-color: rgba(150, 0, 0, .1);
+    color: rgba(225, 0, 0, 1);
+    border-left-color: rgba(225, 0, 0, 1);
+    background-color: rgba(225, 0, 0, .1);
 }
 
 .post-full-content .callout.danger:before {
@@ -1056,13 +1075,13 @@ Usage (In Ghost editor):
 .post-full-content code {
     font-family: "Fira Code", monospace;
     color: rgba(160, 180, 200, 1);
-    padding: 2px;
+    padding: 2px 4px;
     font-size: .8em;
     line-height: 1em;
     font-weight: 500;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid rgb(40, 50, 65);
-    border-radius: 3px;
+    border-radius: 6px;
     /* white-space: pre-wrap; */
     word-wrap: normal !important;
     word-break: normal !important;
@@ -1073,15 +1092,15 @@ Usage (In Ghost editor):
 }
 
 .post-full-content pre {
+    color: var(--whitegrey);
     overflow-x: auto;
     margin: .5em 0 1.5em;
     min-width: unset;
     max-width: 100%;
     border: 2px solid rgba(212,218,222,.1);
-    color: var(--whitegrey);
+    border-radius: 5px;
     font-size: 1.3rem;
     line-height: 1.5em;
-    border-radius: 5px;
 }
 
 .post-full-content pre code {

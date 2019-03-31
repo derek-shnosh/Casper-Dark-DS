@@ -78,7 +78,7 @@ Styling for HTML5 `<details>` elements, used as accordions.
 ```html
 <div class="callout info">
 
-This is an informational calloutwith some `inline-code`
+This is an informational callout with some `inline-code`
 
 > Blockquote *within* a callout?!
 
