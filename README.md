@@ -16,6 +16,59 @@ Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 
 # Features
 
+## PrismJS & Custom "One Dark" Theme
+
+PrismJS is packaged with my custom [One Dark][prismjs-onedark] theme and the following languages and plugins;
+
+<details><summary>Expand for Languages</summary>
+
+- markup
+- css
+- clike
+- javascript
+- apacheconf
+- bash
+- batch
+- css-extras
+- markup-templating
+- git
+- handlebars
+- http
+- ini
+- php
+- json
+- markdown
+- django
+- nginx
+- sql
+- powershell
+- scss
+- python
+- rest
+- sass
+- yaml
+- tcl
+- visual-basic
+- regex
+</details>
+
+<details><summary>Expand for Plugins</summary>
+
+- line-highlight
+- line-numbers
+- toolbar
+- highlight-keywords
+- unescaped-markup
+- command-line
+- show-language
+- copy-to-clipboard
+
+</details>
+
+**Screenshot**
+
+![screenshot-prismjs-onedark][ss-prismjs-onedark]
+
 ## Styled `<details>` (Accordions)
 
 Styling for HTML5 `<details>` elements, used as accordions.
@@ -61,13 +114,9 @@ Styling for HTML5 `<details>` elements, used as accordions.
 
 ```html
 <p class="callout">This is a plain callout.</p>
-
 <p class="callout info">This is an informational callout.</p>
-
 <p class="callout success">This is a success callout</p>
-
 <p class="callout warning">This is a warning callout</p>
-
 <p class="callout danger">This is a danger callout</p>
 ```
 
@@ -158,3 +207,4 @@ Custom format for tables outlining process steps; [example][steps-table-eg].
 [ss-details-open]: assets/images/screenshot-details-open.png
 [ss-d-home]: assets/images/screenshot-desktop-home.png
 [ss-d-post]: assets/images/screenshot-desktop-post.png
+[ss-prismjs-onedark]: https://user-images.githubusercontent.com/21090563/54417483-912f3a00-46bf-11e9-9443-71c5456df6e6.png
