@@ -16,6 +16,37 @@ Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 
 # Features
 
+## Styled `<details>` (Accordions)
+
+Styling for HTML5 `<details>` elements, used as accordions.
+
+### Usage
+
+```html
+<details><summary>Expand for <desc>Dynamic Variable Example</desc></summary>
+ 
+`gi_ints` is a list of GigabitEthernet interfaces, which scales with the number of switches in the stack.
+
+| Switch Count | `gi_ints` |
+| :-: | :- |
+|  1  | `gi1/0/1-36` |
+|  2  | `gi1/0/1-36,gi2/0/1-36` |
+|  3  | `gi1/0/1-36,gi2/0/1-36,gi3/0/1-36` |
+|  4  | `gi1/0/1-36,gi2/0/1-36,gi3/0/1-36,gi4/0/1-36` |
+
+</details>
+```
+
+### Result
+
+**Closed (default)**
+
+![screenshot-details-closed][ss-details-closed]
+
+**Open**
+
+![screenshot-details-open][ss-details-open]
+
 ## Custom Callouts
 
 5 custom callout styles (inspired by [BookStack callouts][bookstack-callouts]).
@@ -76,31 +107,24 @@ Custom format for tables outlining process steps; [example][steps-table-eg].
 
 ### Usage
 
-Wrap the table in a `<div>` tag, include `markdown=1` if the table is MD formatted; e.g. `<div class="steps-table" markdown="1"></div>`
+*Wrap the table in a `<div>` tag; markdown requires a blank space after the `<div>`.*
 
 ```html
-<div class="steps-table" markdown="1">
+<div class="steps-table">
 
-|   #   |       Steps        |
-| :---: | :----------------: |
-|   1   |   Do something.    |
-|       |   ![image-1][1]    |
-|   2   | Do something else. |
-|       |   ![image-2][2]    |
-|   3   | Do something else  |
-|       |   ![image-3][3]    |
-|   4   | Do something else  |
-|       |   ![image-4][4]    |
-|   5   | Do something else  |
-|       |   ![image-5][5]    |
+| # | Count to three on your fingers...
+|:-:| :-:
+| 1 | Hold up **one** finger.
+|   | ![1-finger][1]
+| 2 | Hold up **two** fingers.
+|   | ![2-fingers][2]
+| 3 | Hold up **three** fingers.
+|   | ![3-fingers][3]
 
 
-[1]: https://imgur.com/aaaaa
-[2]: https://imgur.com/bbbbb
-[3]: https://imgur.com/ccccc
-[4]: https://imgur.com/ddddd
-[5]: https://imgur.com/eeeee
-    
+[1]: /content/images/2019/03/step1.png
+[2]: /content/images/2019/03/step2.png
+[3]: /content/images/2019/03/step3.png
 </div>
 ```
 
@@ -114,32 +138,23 @@ Wrap the table in a `<div>` tag, include `markdown=1` if the table is MD formatt
 
 ![screenshot-desktop-home][ss-d-home]
 
-## Post (Top)
+## Post
 
-![screenshot-desktop-post-2-top][ss-d-p2-top]
-
-## Post (Bottom)
-
-![screenshot-desktop-post-2-bottom][ss-d-p2-btm]
-
-## Post Code
-
-![screenshot-desktop-post-1-code][ss-d-p1-code]
-
+![screenshot-desktop-post-2-top][ss-d-post]
 
 
 
 [ghost]: http://github.com/tryghost/ghost/
 [casper]: https://github.com/TryGhost/Casper
-[ss-d-home]: assets/screenshot-desktop-home.png
-[ss-d-p2-top]: assets/screenshot-desktop-post-2-top.png
-[ss-d-p2-btm]: assets/screenshot-desktop-post-2-btm.png
-[ss-d-p1-code]: assets/screenshot-desktop-post-1-code.png
 [zip-dl]: https://github.com/derek-shnosh/casper-dark-ds/archive/master.zip
 [prismjs-onedark]: https://github.com/derek-shnosh/prism-theme-one-dark-ds
 [clipboardjs]: https://github.com/zenorocha/clipboard.js/
 [prismjs]: https://github.com/PrismJS/prism
 [bookstack-callouts]: https://www.bookstackapp.com/blog/beta-release-v0-11-0/
 [steps-table-eg]: https://shnosh.io/securecrt-echo-paste/#securecrtconfiguration
-[ss-steps-table]: assets/screenshot-steps-table.png
-[ss-callouts]: assets/screenshot-callouts.png
+[ss-steps-table]: assets/images/screenshot-steps-table.png
+[ss-callouts]: assets/images/screenshot-callouts.png
+[ss-details-closed]: assets/images/screenshot-details-closed.png
+[ss-details-open]: assets/images/screenshot-details-open.png
+[ss-d-home]: assets/images/screenshot-desktop-home.png
+[ss-d-post]: assets/images/screenshot-desktop-post.png
