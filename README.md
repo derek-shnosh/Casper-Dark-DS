@@ -20,6 +20,8 @@ Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 
 PrismJS is packaged with my custom [One Dark][prismjs-onedark] theme and the following languages and plugins;
 
+> The PrismJS `command-line` plugin includes a hack to allow multiple-prompts ([prismjs-cmdline-hack-reference][prismjs-cmdline-hack]).
+
 <details><summary>Expand for Languages</summary>
 
 - markup
@@ -200,6 +202,7 @@ Custom format for tables outlining process steps; [example][steps-table-eg].
 [clipboardjs]: https://github.com/zenorocha/clipboard.js/
 [prismjs]: https://github.com/PrismJS/prism
 [bookstack-callouts]: https://www.bookstackapp.com/blog/beta-release-v0-11-0/
+[prismjs-cmdline-hack]: https://github.com/PrismJS/prism/issues/1021#issuecomment-477791027
 [steps-table-eg]: https://shnosh.io/securecrt-echo-paste/#securecrtconfiguration
 [ss-steps-table]: assets/images/screenshot-steps-table.png
 [ss-callouts]: assets/images/screenshot-callouts.png
