@@ -20,7 +20,7 @@ Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 
 PrismJS is packaged with my custom [One Dark][prismjs-onedark] theme and the following languages and plugins;
 
-> The PrismJS `command-line` plugin includes a hack to allow multiple-prompts ([prismjs-cmdline-hack-reference][prismjs-cmdline-hack]).
+> The PrismJS `command-line` plugin includes a hack to allow multiple-prompts ([reference][prismjs-cmdline-hack]).
 
 <details><summary>Expand for Languages</summary>
 
