@@ -212,4 +212,4 @@ Custom format for tables outlining process steps; [example][steps-table-eg].
 [ss-details-open]: assets/images/screenshot-details-open.png
 [ss-d-home]: assets/images/screenshot-desktop-home.png
 [ss-d-post]: assets/images/screenshot-desktop-post.png
-[ss-prismjs-onedark]: https://user-images.githubusercontent.com/21090563/54417483-912f3a00-46bf-11e9-9443-71c5456df6e6.png
+[ss-prismjs-onedark]: assets/images/screenshot-prismjs-one-dark.png
