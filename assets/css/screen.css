@@ -951,6 +951,7 @@ Usage (In Ghost editor):
     line-height: 1.4em;
     font-size: 1.6rem;
     font-weight: 400;
+    font-style: initial;
 }
 
 .post-full-content blockquote li {
@@ -982,7 +983,7 @@ Usage (In Ghost editor):
 .post-full-content blockquote:before {
 	content: "\201C";
     color: rgba(195, 195, 95, .8);
-	font-size: 2em;
+	font-size: 3.5rem;
 	font-weight: 700;
 	position: absolute;
 	top: 10px;
@@ -992,10 +993,11 @@ Usage (In Ghost editor):
 /* Custom Callouts */
 .post-full-content .callout {
     font-size: 1.6rem;
+    font-style: italic;
     margin: .5em 0;
-    padding: .1em .5em .2em 1.7em;
-    border-left: 5px solid rgba(150, 150, 150, 1);
-    border-radius: 3px 0 0 3px;
+    padding: .1em .5em .2em;
+    border-left: 30px solid rgba(150, 150, 150, 1);
+    border-radius: 5px 0 0 5px;
     background-color: rgba(150, 150, 150, .1);
     display: block;
     position: relative;
@@ -1022,10 +1024,15 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout:before {
+    content: '\2BA9';
     font-size: 2.5rem;
+    font-style: normal !important;
+    color: rgba(0,0,0,.8) !important;
     position: absolute;
-    left: 2.5px;
-    top: 1px;
+    -webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+    left: -15px;
+    top: 50%;
 }
 
 .post-full-content .callout.info {
@@ -1036,7 +1043,7 @@ Usage (In Ghost editor):
 
 .post-full-content .callout.info:before {
     content: '\24D8';
-    color: rgba(95, 125, 195, .8);
+    font-weight: 700;
 }
 
 .post-full-content .callout.success {
@@ -1047,7 +1054,6 @@ Usage (In Ghost editor):
 
 .post-full-content .callout.success:before {
     content: '\2714';
-    color: rgba(0, 125, 0, .8);
 }
 
 .post-full-content .callout.warning {
@@ -1058,7 +1064,7 @@ Usage (In Ghost editor):
 
 .post-full-content .callout.warning:before {
     content: '\26A0';
-    color: rgba(205, 105, 0, .8);
+    font-weight: 700;
 }
 
 .post-full-content .callout.danger {
@@ -1069,7 +1075,6 @@ Usage (In Ghost editor):
 
 .post-full-content .callout.danger:before {
     content: '\2BC3';
-    color: rgba(150, 0, 0, .8);
 }
 
 .post-full-content code {
@@ -1079,6 +1084,7 @@ Usage (In Ghost editor):
     font-size: .8em;
     line-height: 1em;
     font-weight: 500;
+    font-style: initial;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid rgb(40, 50, 65);
     border-radius: 6px;

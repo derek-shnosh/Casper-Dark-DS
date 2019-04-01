@@ -106,10 +106,10 @@ Styling for HTML5 `<details>` elements, used as accordions.
 
 5 custom callout styles (inspired by [BookStack callouts][bookstack-callouts]).
 
-- Generic (white)
-- Info (🛈 blue)
-- Success (✓ green)
-- Warning (⚠ orange)
+- Generic (⮩ white)
+- Info (**ⓘ** blue)
+- Success (✔ green)
+- Warning (**⚠** orange)
 - Danger (⯃ red)
 
 ### Callouts with `<p>`
@@ -131,11 +131,13 @@ Styling for HTML5 `<details>` elements, used as accordions.
 
 This is an informational callout with some `inline-code`
 
-> Blockquote *within* a callout?!
+> **And a blockquote.**
+> 
+> With *markdown* formatting; e.g. ~~strikethrough~~
 
 \```bash
 # And a code block.
-sudo nanon /etc/hostname
+sudo nano /etc/hostname
 \```
 
 And a list
