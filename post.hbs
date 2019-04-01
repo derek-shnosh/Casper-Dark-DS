@@ -149,6 +149,12 @@ into the {body} of the default.hbs template --}}
 {{#contentFor "scripts"}}
 <script>
 
+// Fix for floating-header height and anchor (id) links.
+// Ref: https://github.com/twbs/bootstrap/issues/1768#issuecomment-13306753
+var shiftWindow = function() { scrollBy(0, -70) };
+window.addEventListener("hashchange", shiftWindow);
+function load() { if (window.location.hash) shiftWindow(); }
+
 // When the user scrolls down 200px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
