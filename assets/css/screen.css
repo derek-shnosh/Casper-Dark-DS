@@ -1303,6 +1303,10 @@ Usage (In Ghost editor):
     font-size: 1.4rem;
 }
 
+.steps-table {
+    width: 100%;
+}
+
 .steps-table > table thead {
     visibility: collapse;
 }
