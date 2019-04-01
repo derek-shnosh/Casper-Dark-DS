@@ -1,10 +1,14 @@
 # Casper Dark (DS)
 
-Based on the default theme ([Casper][casper]) for [Ghost][ghost].
-
-> Forked from Casper v2.9.6 on 2019/03/19
+> Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 > 
-> [Changelog](changelog-ds.md)
+> Forked from Casper v2.9.6 on 2019/03/19
+
+*Disclosure: I'm new to all of this CSS, HTML, etc. shenanigans; aside from a private BookStack instance, this is my first venture into any kind of theming.*
+
+That being said, ***I put Casper in the dark*** and he picked up a few tricks/features. I've attached a couple screenshots, or you can check the theme out on [my site](https://shnosh.io). While this is a bit of an experimental work in progress, I thought it was sufficiently *done enough* for sharing; I expect there will be breaks and changes as I learn and tweak.
+
+**[Changelog](changelog-ds.md)**
 
 # Installation
 
