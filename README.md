@@ -169,19 +169,18 @@ Custom format for tables outlining process steps; [example][steps-table-eg].
 ```html
 <div class="steps-table">
 
-| # | Count to three on your fingers...
-|:-:| :-:
-| 1 | Hold up **one** finger.
-|   | ![1-finger][1]
-| 2 | Hold up **two** fingers.
-|   | ![2-fingers][2]
-| 3 | Hold up **three** fingers.
-|   | ![3-fingers][3]
+| How to hold up three fingers.
+| -
+| Hold up **one** finger.
+| ![step1][1-finger]
+| Hold up **two** fingers.
+| ![step2][2-fingers]
+| Hold up **three** fingers.
+| ![step3][3-fingers]
 
-
-[1]: /content/images/2019/03/step1.png
-[2]: /content/images/2019/03/step2.png
-[3]: /content/images/2019/03/step3.png
+[1-finger]: https://i.imgur.com/tjeG9rD.png
+[2-fingers]: https://i.imgur.com/rCbyQrV.png
+[3-fingers]: https://i.imgur.com/1kbc5eN.png
 </div>
 ```
 

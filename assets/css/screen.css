@@ -1290,11 +1290,10 @@ Usage (In Ghost editor):
 }
 
 .post-full-content table th {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-weight: 700;
     letter-spacing: 0.2px;
-    text-align: left;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background: rgba(68,114,196,.1);
 }
 
@@ -1309,17 +1308,45 @@ Usage (In Ghost editor):
     font-size: 1.4rem;
 }
 
-.steps-table {
+.post-full-content .steps-table {
     width: 100%;
+    display: block;
 }
 
-.steps-table > table thead {
+.post-full-content .steps-table table {
+    overflow: hidden;
+    border: 1px solid rgba(212,218,222,.25);
+    border-radius: 2.5rem;
+    border-collapse: unset;
+}
+
+/* .post-full-content .steps-table > table thead {
     visibility: collapse;
+} */
+
+.post-full-content .steps-table > table th {
+    /* visibility: collapse; */
+    border: 0 !important;
+    text-align: center !important;
 }
 
-.steps-table > table tbody tr:nth-child(odd) {
+.post-full-content .steps-table > table td {
+    border: 0 !important;
+}
+
+.post-full-content .steps-table > table tbody tr:nth-child(odd) {
     background: rgba(25, 25, 30, 1) !important;
+    counter-increment: rowNumber;
     /* font-weight: 900; */
+}
+
+.post-full-content .steps-table > table tbody tr:nth-child(odd) > td:first-child:before {
+    content: counter(rowNumber)"\2771  ";
+    color: rgba(95, 125, 195, 1);
+    font-size: 2rem;
+    font-style: normal !important;
+    font-weight: 700;
+    position: relative;
 }
 
 /* Details (accordion) */
