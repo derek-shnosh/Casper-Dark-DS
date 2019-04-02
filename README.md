@@ -6,7 +6,7 @@
 
 *Disclosure: I'm new to all of this CSS, HTML, etc. shenanigans; aside from a private BookStack instance, this is my first venture into any kind of theming.*
 
-That being said, ***I put Casper in the dark*** and he picked up a few tricks/features. I've attached a couple screenshots, or you can check the theme out on [my site](https://shnosh.io). While this is a bit of an experimental work in progress, I thought it was sufficiently *done enough* for sharing; I expect there will be breaks and changes as I learn and tweak.
+That being said, ***I put Casper in the dark*** and added a few tricks/features; primarily focused on presenting technical documentation. I've attached a couple screenshots, or you can check the theme out on [my site](https://shnosh.io). While this is a bit of an experimental work in progress, I thought it was sufficiently *done enough* for sharing; I expect there will be changes as I learn, tweak, and (hopefully) optimize over time.
 
 **[Changelog](changelog-ds.md)**
 
@@ -157,10 +157,7 @@ And a list
 
 ## Steps Tables
 
-Custom format for tables outlining process steps; [example][steps-table-eg].
-
-- `table thead` is collapsed.
-- `table tbody tr:nth-child` color change; i.e. alternating colors; e.g.
+Custom format for single column Markdown tables used to outline process steps.
 
 ### Usage
 
@@ -169,19 +166,20 @@ Custom format for tables outlining process steps; [example][steps-table-eg].
 ```html
 <div class="steps-table">
 
-| How to hold up three fingers.
-| -
-| Hold up **one** finger.
-| ![step1][1-finger]
-| Hold up **two** fingers.
-| ![step2][2-fingers]
-| Hold up **three** fingers.
-| ![step3][3-fingers]
+| How to hold up three fingers.   <!-- Header  -->
+| -                               <!-- Separator line -->
+| Hold up **one** finger.         <!-- Step -->
+| ![step1][1-finger]              <!-- Image -->
+| Hold up **two** fingers.        <!-- Step -->
+| ![step2][2-fingers]             <!-- Image -->
+| Hold up **three** fingers.      <!-- Step -->
+| ![step3][3-fingers]             <!-- Image -->
+</div>
 
+<!-- Use reference style links to keep table rows concise. -->
 [1-finger]: https://i.imgur.com/tjeG9rD.png
 [2-fingers]: https://i.imgur.com/rCbyQrV.png
 [3-fingers]: https://i.imgur.com/1kbc5eN.png
-</div>
 ```
 
 ### Result
