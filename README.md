@@ -24,8 +24,6 @@ That being said, ***I put Casper in the dark*** and added a few tricks/features;
 
 PrismJS is packaged with my custom [One Dark][prismjs-onedark] theme and the following languages and plugins;
 
-> The PrismJS `command-line` plugin includes a hack to allow multiple-prompts ([reference][prismjs-cmdline-hack]).
-
 <details><summary>Expand for Languages</summary>
 
 - markup
@@ -75,6 +73,24 @@ PrismJS is packaged with my custom [One Dark][prismjs-onedark] theme and the fol
 
 ![screenshot-prismjs-onedark][ss-prismjs-onedark]
 
+### Hack for `command-line` plugin
+
+The PrismJS `command-line` plugin includes a hack that allows multiple prompts to be defined per code-block ([source][prismjs-cmdline-hack]).
+
+```html
+<pre class="command-line language-bash" data-prompt="1,4|NXOSv#;2-3|NXOSv(config)#">
+<code>conf
+feature nxapi
+end
+copy ru st</code></pre>
+```
+
+### Result
+
+![screenshot-prismjs-cmdline][ss-prismjs-cmdline]
+
+---
+
 ## Styled `<details>` (Accordions)
 
 Styling for HTML5 `<details>` elements, used as accordions.
@@ -105,6 +121,8 @@ Styling for HTML5 `<details>` elements, used as accordions.
 **Open**
 
 ![screenshot-details-open][ss-details-open]
+
+---
 
 ## Custom Callouts
 
@@ -154,6 +172,8 @@ And a list
 ### Results
 
 ![screenshot-callouts][ss-callouts]
+
+---
 
 ## Steps Tables
 
@@ -214,3 +234,4 @@ Custom format for single column Markdown tables used to outline process steps.
 [ss-d-home]: assets/images/screenshot-desktop-home.png
 [ss-d-post]: assets/images/screenshot-desktop-post.png
 [ss-prismjs-onedark]: assets/images/screenshot-prismjs-one-dark.png
+[ss-prismjs-cmdline]: assets/images/screenshot-prismjs-cmd-line.png

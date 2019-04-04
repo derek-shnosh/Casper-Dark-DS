@@ -1130,7 +1130,7 @@ Usage (In Ghost editor):
     margin: 4vw 0;
 }
 
-.post-full-content hr:after {
+/* .post-full-content hr:after {
     content: "";
     position: absolute;
     top: -15px;
@@ -1142,7 +1142,7 @@ Usage (In Ghost editor):
     background: color(var(--lightgrey) l(+10%));
     box-shadow: #fff 0 0 0 5px;
     transform: rotate(45deg);
-}
+} */
 
 .post-full-content h1,
 .post-full-content h2,
