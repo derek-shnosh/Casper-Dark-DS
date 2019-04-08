@@ -1,4 +1,4 @@
-## v2.9.6-004
+## v2.9.8-004
 - Merged with upstream repo, updated to 2.9.8.
 
 ## v2.9.6-004
