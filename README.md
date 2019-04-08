@@ -2,7 +2,7 @@
 
 > Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 > 
-> Forked from Casper v2.9.6 on 2019/03/19
+> Merged with [upstream][upstream-repo] v2.9.8 on 2019/04/08
 
 *Disclosure: I'm new to all of this CSS, HTML, etc. shenanigans; aside from a private BookStack instance, this is my first venture into any kind of theming.*
 
@@ -218,6 +218,7 @@ Custom format for single column Markdown tables used to outline process steps.
 
 
 
+[upstream-repo]: https://github.com/TryGhost/Casper
 [ghost]: http://github.com/tryghost/ghost/
 [casper]: https://github.com/TryGhost/Casper
 [zip-dl]: https://github.com/derek-shnosh/casper-dark-ds/archive/master.zip

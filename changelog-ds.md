@@ -1,4 +1,7 @@
 ## v2.9.6-004
+- Merged with upstream repo, updated to 2.9.8.
+
+## v2.9.6-004
 
 - Disabled larger text on `.post-template .post-content > p:first-child`.
 - Added `tag-title` class to add thin stroke around tag titles on tag.hbs.
