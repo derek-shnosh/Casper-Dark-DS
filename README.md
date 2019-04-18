@@ -2,7 +2,7 @@
 
 > Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 > 
-> Merged with [upstream][upstream-repo] v2.9.8 on 2019/04/08
+> Merged with [upstream][upstream-repo] v2.9.10 on 2019/04/17
 
 *Disclosure: I'm new to all of this CSS, HTML, etc. shenanigans; aside from a private BookStack instance, this is my first venture into any kind of theming.*
 
