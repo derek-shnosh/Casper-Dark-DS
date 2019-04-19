@@ -784,7 +784,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding: 70px 90px 0;
     min-height: 230px;
     font-family: "Muli", sans-serif;
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 1.4em;
     background: rgba(37, 39, 42, 1);
 }
