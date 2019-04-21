@@ -1,3 +1,9 @@
+## v2.9.10-005
+- Add share via LinkedIn to floating header ([reference][linkedin-share]).
+- Use FontAwesome for callout icons.
+
+[linkedin-share]: https://forum.ghost.org/t/additional-social-accounts-in-general-settings/750/24
+
 ## v2.9.10-004
 - Merged with upstream repo, updated to 2.9.10.
 
