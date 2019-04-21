@@ -981,12 +981,12 @@ Usage (In Ghost editor):
 }
 
 .post-full-content blockquote:before {
-	content: "\201C";
+	content: "\f10d";
     color: rgba(195, 195, 95, .8);
-	font-size: 3.5rem;
+    font-family: "Font Awesome 5 Free";
+	font-size: 1.25rem;
 	font-weight: 700;
 	position: absolute;
-	top: 10px;
     left: 5px;
 }
 
@@ -1024,8 +1024,10 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout:before {
-    content: '\2BA9';
-    font-size: 2.5rem;
+    content: '\f0eb';
+    font-family: "Font Awesome 5 Free";
+    font-size: 2rem;
+    font-weight: 700;
     font-style: normal !important;
     color: rgba(0,0,0,.8) !important;
     position: absolute;
@@ -1042,8 +1044,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout.info:before {
-    content: '\24D8';
-    font-weight: 700;
+    content: '\f05a';
 }
 
 .post-full-content .callout.success {
@@ -1053,7 +1054,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout.success:before {
-    content: '\2714';
+    content: '\f00c';
 }
 
 .post-full-content .callout.warning {
@@ -1063,8 +1064,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout.warning:before {
-    content: '\26A0';
-    font-weight: 700;
+    content: '\f071';
 }
 
 .post-full-content .callout.danger {
@@ -1074,7 +1074,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .callout.danger:before {
-    content: '\2BC3';
+    content: '\f714';
 }
 
 .post-full-content code {
@@ -1955,7 +1955,7 @@ details[open]>summary~* {
 
 .floating-header-share svg {
     width: auto;
-    height: 16px;
+    height: 60%;
     fill: #fff;
 }
 
@@ -1976,6 +1976,7 @@ details[open]>summary~* {
     transform: rotate(90deg);
 }
 
+.floating-header-share-li,
 .floating-header-share-tw,
 .floating-header-share-fb {
     display: block;
@@ -1986,6 +1987,10 @@ details[open]>summary~* {
     line-height: 48px;
     text-align: center;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.floating-header-share-li {
+    background: rgb(17, 120, 179);
 }
 
 .floating-header-share-tw {
@@ -2047,6 +2052,7 @@ details[open]>summary~* {
     .floating-header-logo {
         font-size: 1.5rem;
     }
+    .floating-header-share-li,
     .floating-header-share-tw,
     .floating-header-share-fb {
         width: 40px;
