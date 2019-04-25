@@ -1363,6 +1363,7 @@ Usage (In Ghost editor):
 
 .post-full-content details {
     margin: 0.5em 0 1em;
+    align-self: flex-start;
 }
 
 .post-full-content summary desc {
