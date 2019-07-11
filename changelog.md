@@ -1,5 +1,5 @@
 ## v2.10.3-005
-- Merged with upstream rep, updated to 2.10.3.
+- Merged with upstream repo, updated to 2.10.3.
 
 ## v2.9.10-005
 - Add share via LinkedIn to floating header ([reference][linkedin-share]).
