@@ -2,13 +2,13 @@
 
 > Based on the default theme ([Casper][casper]) for [Ghost][ghost].
 > 
-> Merged with [upstream][upstream-repo] v2.9.10 on 2019/04/17
+> Merged with [upstream][upstream-repo] v2.10.3 on 2019/07/11
 
 *Disclosure: I'm new to all of this CSS, HTML, etc. shenanigans; aside from a private BookStack instance, this is my first venture into any kind of theming.*
 
 That being said, ***I put Casper in the dark*** and added a few tricks/features; primarily focused on presenting technical documentation. I've attached a couple screenshots, or you can check the theme out on [my site](https://shnosh.io). While this is a bit of an experimental work in progress, I thought it was sufficiently *done enough* for sharing; I expect there will be changes as I learn, tweak, and (hopefully) optimize over time.
 
-**[Changelog](changelog-ds.md)**
+**[Changelog](changelog.md)**
 
 # Installation
 
