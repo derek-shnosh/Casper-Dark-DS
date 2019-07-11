@@ -2,7 +2,7 @@
     "name": "casper-dark-ds",
     "description": "Clone of the default personal blogging theme for Ghost, Casper.",
     "demo": "https://shnosh.io",
-    "version": "2.9.10-005",
+    "version": "2.10.3-005",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
@@ -45,11 +45,11 @@
     "contributors": "https://github.com/derek-shnosh/Casper-Dark-DS/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.3.2",
-        "autoprefixer": "9.5.1",
+        "autoprefixer": "9.6.0",
         "beeper": "1.1.1",
         "cssnano": "4.1.10",
-        "gscan": "2.4.1",
-        "gulp": "4.0.0",
+        "gscan": "2.6.2",
+        "gulp": "4.0.2",
         "gulp-livereload": "4.0.1",
         "gulp-postcss": "8.0.0",
         "gulp-uglify": "3.0.2",
