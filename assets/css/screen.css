@@ -201,7 +201,7 @@ h6 {
 }
 
 .site-logo {
-    max-height: 45px;
+    max-height: 125px;
 }
 
 .site-description {
@@ -284,7 +284,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .site-nav-logo img {
     display: block;
     width: auto;
-    height: 21px;
+    height: 30px;
 }
 
 .nav {
