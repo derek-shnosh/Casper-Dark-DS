@@ -128,11 +128,11 @@ Styling for HTML5 `<details>` elements, used as accordions.
 
 5 custom callout styles (inspired by [BookStack callouts][bookstack-callouts]).
 
-- Generic (⮩ white)
-- Info (**ⓘ** blue)
-- Success (✔ green)
-- Warning (**⚠** orange)
-- Danger (⯃ red)
+- Generic (white)
+- Info (blue)
+- Success (green)
+- Warning (orange)
+- Danger (red)
 
 ### Callouts with `<p>`
 
