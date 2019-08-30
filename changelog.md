@@ -1,3 +1,6 @@
+## v2.11.1-006
+- Merged with upstream repo, updated to 2.11.1.
+
 ## v2.10.3-006
 - Increased `.site-logo` and `.site-nav-logo` sizes.
 
