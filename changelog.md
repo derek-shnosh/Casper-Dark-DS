@@ -1,3 +1,6 @@
+## v2.11.1-007
+- Adjusted CSS for new bookmark objects.
+
 ## v2.11.1-006
 - Merged with upstream repo, updated to 2.11.1.
 
