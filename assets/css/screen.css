@@ -1727,6 +1727,27 @@ details[open]>summary~* {
     max-width: 840px;
 }
 
+.commento-root-font * {
+    font-family: "Fira Sans", sans-serif !important;
+}
+
+.commento-root *,
+.commento-logged-container *,
+.commento-logged-in-as *,
+.commento-name * {
+    color: inherit !important;
+}
+
+.commento-root textarea {
+    background: rgba(255,255,255,.1) !important;
+    color: rgb(255,255,255) !important;
+}
+
+.commento-root .commento-card {
+    border-top: 2px solid rgba(255,255,255,.1) !important;
+    border-left: 2px solid rgba(255,255,255,.1) !important;
+    border-radius: 5px !important;
+}
 
 /* 7.4. Related posts
 /* ---------------------------------------------------------- */

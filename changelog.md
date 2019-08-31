@@ -1,3 +1,6 @@
+## v2.11.1-008
+- Added commento via `post.hbs` and custom CSS in `screen.css`.
+
 ## v2.11.1-007
 - Adjusted CSS for new bookmark objects.
 
