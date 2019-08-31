@@ -1744,8 +1744,8 @@ details[open]>summary~* {
 }
 
 .commento-root .commento-card {
-    border-top: 2px solid rgba(255,255,255,.1) !important;
-    border-left: 2px solid rgba(255,255,255,.1) !important;
+    border-top: 2px solid rgb(83, 81, 84) !important;
+    /* border-left: 2px solid rgba(255,255,255,.1) !important; */
     border-radius: 5px !important;
 }
 
