@@ -1743,6 +1743,10 @@ details[open]>summary~* {
     color: rgb(255,255,255) !important;
 }
 
+.commento-root code {
+    font-family: "Fira Code", monospace !important;
+}
+
 .commento-root .commento-card {
     border-top: 2px solid rgb(83, 81, 84) !important;
     /* border-left: 2px solid rgba(255,255,255,.1) !important; */
