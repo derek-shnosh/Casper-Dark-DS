@@ -1087,7 +1087,7 @@ Usage (In Ghost editor):
     font-style: initial;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid rgb(40, 50, 65);
-    border-radius: 6px;
+    border-radius: 3px;
     /* white-space: pre-wrap; */
     word-wrap: normal !important;
     word-break: normal !important;
@@ -1104,7 +1104,7 @@ Usage (In Ghost editor):
     min-width: unset;
     max-width: 100%;
     border: 2px solid rgba(212,218,222,.1);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-size: 1.3rem;
     line-height: 1.5em;
 }
