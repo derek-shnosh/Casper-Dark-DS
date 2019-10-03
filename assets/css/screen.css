@@ -1158,6 +1158,26 @@ Usage (In Ghost editor):
     font-family: "Fira Sans", sans-serif;
 }
 
+.post-full-content h1:before,
+.post-full-content h2:before {
+    content: '\f550';
+    font-family: "Font Awesome 5 Free";
+    padding-right: 0.25em;
+    margin-left: -1.5em;
+    color: #3eb0ef;
+}
+
+.post-full-content h3:before,
+.post-full-content h4:before,
+.post-full-content h5:before,
+.post-full-content h6:before {
+    content: '\f101';
+    font-family: "Font Awesome 5 Free";
+    padding-right: 0.25em;
+    margin-left: -1em;
+    color: #3eb0ef;
+}
+
 .post-full-content h1 {
     margin: 0.5em 0 0.2em 0;
     font-size: 4.6rem;
@@ -1900,7 +1920,7 @@ details[open]>summary~* {
 /* ---------------------------------------------------------- */
 
 .floating-header {
-    font-family: "Fira Sans", sans-serif;
+font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     visibility: hidden;
     position: fixed;
