@@ -1164,7 +1164,7 @@ Usage (In Ghost editor):
     font-family: "Font Awesome 5 Free";
     padding-right: 0.25em;
     margin-left: -1.25em;
-    color: #3eb0ef;
+    color: rgba(235,125,50,.5);
 }
 
 .post-full-content h3:before,
@@ -1175,7 +1175,7 @@ Usage (In Ghost editor):
     font-family: "Font Awesome 5 Free";
     padding-right: 0.25em;
     margin-left: -1.1em;
-    color: #3eb0ef;
+    color: rgba(235,125,50,.5);
 }
 
 .post-full-content h1 {
