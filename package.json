@@ -2,10 +2,10 @@
     "name": "casper-dark-ds",
     "description": "Clone of the default personal blogging theme for Ghost, Casper.",
     "demo": "https://shnosh.io",
-    "version": "2.11.1-008",
+    "version": "2.11.1.008",
     "engines": {
         "ghost": ">=2.0.0",
-        "ghost-api": "v2"
+        "ghost-api": "v4"
     },
     "license": "MIT",
     "screenshots": {
