@@ -1,4 +1,7 @@
-## v2.11.1-008
+## v2.11.1-009
+- Adjusted CSS for ordered/unordered lists and all markers.
+
+- ## v2.11.1-008
 - Added commento via `post.hbs` and custom CSS in `screen.css`.
 
 ## v2.11.1-007

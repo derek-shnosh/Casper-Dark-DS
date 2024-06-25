@@ -855,7 +855,17 @@ make sure this only happens on large viewports / desktop-ish devices.
     min-width: 100%;
 }
 
+.post-full-content ::marker {
+    color: #cd6900;
+    font-weight: bold;
+}
+
+.post-full-content ol {
+    margin: 1.5em 0 .25em;
+}
+
 .post-full-content ul {
+    margin: 0.25em 0 .25em;
     padding-right: unset;
 }
 
