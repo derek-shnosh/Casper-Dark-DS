@@ -908,7 +908,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content img,
 .post-full-content video {
     display: block;
-    margin: 1.5em auto;
+    margin: 0.25em auto;
     max-width: 100%;
     height: auto;
 }
