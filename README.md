@@ -1,3 +1,14 @@
+> [!WARNING]
+> **Repository Archived**
+>
+> This project hasn't been maintained since I migrated my blog to Material for Mkdocs.
+> 
+> The contents remain available for reference and historical purposes.
+
+This repository has been **archived** and is no longer actively maintained.  
+All code, documentation, and releases are provided **as-is** for reference only.  
+Issues and pull requests are disabled.
+
 # Casper Dark (DS)
 
 > Based on the default theme ([Casper][casper]) for [Ghost][ghost].
